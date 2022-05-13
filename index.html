@@ -1,0 +1,789 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+<div class="wraper">
+    <nav id="navbar">
+      <header>LINUX <span>Documentation</span></header>
+      <ul class="nav-ul">
+        <li class="introduction"><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li class="history"><a class="nav-link" href="#History">History</a></li>
+        <li class="gnu"><a class="nav-link" href="#GNU_Project">GNU Project</a></li>
+        <li class="dragora"><a class="nav-link" href="#Dragora">Dragora</a></li>
+        <li class="debian"><a class="nav-link" href="#Debian">Debian</a></li>
+        <li class="fedora"><a class="nav-link" href="#Fedora">Fedora</a></li>
+        <li class="arch"><a class="nav-link" href="#Arch_Linux">Arch Linux</a></li>
+        <li class="ubuntu"><a class="nav-link" href="#Ubuntu">Ubuntu</a></li>
+        <li class="kali"><a class="nav-link" href="#Kali_Linux">Kali Linux</a></li>
+        <li class="terminal"><a class="nav-link" href="#Terminal">Terminal</a></li>
+        <li class="reference"><a class="nav-link" href="#Reference">Reference</a></li>
+      </ul>
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+          <a href="https://en.wikipedia.org/wiki/Linux" target="_blank">
+            <img src="https://hsto.org/webt/w9/tj/yz/w9tjyz5nyynb4zwy2kiikc0ckec.png" alt="Linux">
+          </a>
+          <p>
+            <strong>Linux</strong> is a family of open source Unix-like operating systems based on the Linux kernel, an
+            operating system kernel first released on September 17, 1991, by Linus Torvalds. Linux is typically packaged
+            in a Linux distribution.
+            Distributions include the Linux kernel and supporting system software and libraries, many of which are
+            provided by the GNU Project. Many Linux distributions use the word "Linux" in their name, but the Free
+            Software Foundation uses the name GNU/Linux to emphasize the importance of GNU software, causing some
+            controversy.
+            Popular Linux distributions include Debian, Fedora, and Ubuntu. Commercial distributions include Red Hat
+            Enterprise Linux and SUSE Linux Enterprise Server. Desktop Linux distributions include a windowing system
+            such as X11 or Wayland, and a desktop environment such as GNOME or KDE Plasma. Distributions intended for
+            servers may omit graphics altogether, or include a solution stack such as LAMP. Because Linux is freely
+            redistributable, anyone may create a distribution for any purpose.
+            Linux was originally developed for personal computers based on the Intel x86 architecture, but has since
+            been ported to more platforms than any other operating system. Linux is the leading operating system on
+            servers and other big iron systems such as mainframe computers, and the only OS used on TOP500
+            supercomputers (since November 2017, having gradually eliminated all competitors). It is used by around 2.3
+            percent of desktop computers. The Chromebook, which runs the Linux kernel-based Chrome OS, dominates the US
+            K–12 education market and represents nearly 20 percent of sub-$300 notebook sales in the US.
+            Linux also runs on embedded systems, i.e. devices whose operating system is typically built into the
+            firmware and is highly tailored to the system. This includes routers, automation controls, televisions,
+            digital video recorders, video game consoles, and smartwatches. Many smartphones and tablet computers run
+            Android and other Linux derivatives. Because of the dominance of Android on smartphones, Linux has the
+            largest installed base of all general-purpose operating systems.
+            Linux is one of the most prominent examples of free and open-source software collaboration. The source code
+            may be used, modified and distributed—commercially or non-commercially—by anyone under the terms of its
+            respective licenses, such as the GNU General Public License.
+          </p>
+        </article>
+      </section>
+
+      <section class="main-section" id="History">
+        <header>History</header>
+        <article>
+          <a href="https://en.wikipedia.org/wiki/Linus_Torvalds" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Linus_Torvalds_%28cropped%29.jpg"
+              alt="Linus_Torvalds">
+          </a>
+          <h3>Precursors</h3>
+          <p>
+            <strong>Linus Torvalds</strong>, principal author of the Linux kernel. The Unix operating system was
+            conceived and implemented in 1969, at AT&T's Bell Laboratories in the United States by Ken Thompson, Dennis
+            Ritchie, Douglas McIlroy, and Joe Ossanna. First released in 1971, Unix was written entirely in assembly
+            language, as was common practice at the time. In 1973 in a key, pioneering approach, it was rewritten in the
+            C programming language by Dennis Ritchie (with the exception of some hardware and I/O routines). The
+            availability of a high-level language implementation of Unix made its porting to different computer
+            platforms easier.
+            Due to an earlier antitrust case forbidding it from entering the computer business, AT&T was required to
+            license the operating system's source code to anyone who asked. As a result, Unix grew quickly and became
+            widely adopted by academic institutions and businesses. In 1984, AT&T divested itself of Bell Labs; freed of
+            the legal obligation requiring free licensing, Bell Labs began selling Unix as a proprietary product, where
+            users were not legally allowed to modify Unix. The GNU Project, started in 1983 by Richard Stallman, had the
+            goal of creating a "complete Unix-compatible software system" composed entirely of free software. Work began
+            in 1984. Later, in 1985, Stallman started the Free Software Foundation and wrote the GNU General Public
+            License (GNU GPL) in 1989. By the early 1990s, many of the programs required in an operating system (such as
+            libraries, compilers, text editors, a Unix shell, and a windowing system) were completed, although low-level
+            elements such as device drivers, daemons, and the kernel, called GNU/Hurd, were stalled and incomplete.
+            Linus Torvalds has stated that if the GNU kernel had been available at the time (1991), he would not have
+            decided to write his own. Although not released until 1992, due to legal complications, development of
+            386BSD, from which NetBSD, OpenBSD and FreeBSD descended, predated that of Linux. Torvalds has also stated
+            that if 386BSD had been available at the time, he probably would not have created Linux.
+            MINIX was created by Andrew S. Tanenbaum, a computer science professor, and released in 1987 as a minimal
+            Unix-like operating system targeted at students and others who wanted to learn the operating system
+            principles. Although the complete source code of MINIX was freely available, the licensing terms prevented
+            it from being free software until the licensing changed in April 2000.
+          </p>
+
+          <h3>Creation</h3>
+          <p>
+            In 1991, while attending the University of Helsinki, Torvalds became curious about operating systems.
+            Frustrated by the licensing of MINIX, which at the time limited it to educational use only, he began to work
+            on his own operating system kernel, which eventually became the Linux kernel.
+            Torvalds began the development of the Linux kernel on MINIX and applications written for MINIX were also
+            used on Linux. Later, Linux matured and further Linux kernel development took place on Linux systems. GNU
+            applications also replaced all MINIX components, because it was advantageous to use the freely available
+            code from the GNU Project with the fledgling operating system; code licensed under the GNU GPL can be reused
+            in other computer programs as long as they also are released under the same or a compatible license.
+            Torvalds initiated a switch from his original license, which prohibited commercial redistribution, to the
+            GNU GPL. Developers worked to integrate GNU components with the Linux kernel, making a fully functional and
+            free operating system.
+          </p>
+        </article>
+      </section>
+
+      <section class="main-section" id="GNU_Project">
+        <header>GNU Project</header>
+        <article>
+          <a href="https://en.wikipedia.org/wiki/GNU_Project" target="_blank">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/2/22/Heckert_GNU_white.svg/180px-Heckert_GNU_white.svg.png"
+              alt="GNU_Project">
+          </a>
+          <p>
+            <strong>The GNU Project</strong> is a free software, mass collaboration project that Richard Stallman
+            announced on September 27, 1983. Its goal is to give computer users freedom and control in their use of
+            their computers and computing devices by collaboratively developing and publishing software that gives
+            everyone the rights to freely run the software, copy and distribute it, study it, and modify it. GNU
+            software grants these rights in its license.
+            In order to ensure that the entire software of a computer grants its users all freedom rights (use, share,
+            study, modify), even the most fundamental and important part, the operating system (including all its
+            numerous utility programs) needed to be free software. According to its manifesto, the founding goal of the
+            project was to build a free operating system, and if possible, "everything useful that normally comes with a
+            Unix system so that one could get along without any software that is not free." Stallman decided to call
+            this operating system GNU (a recursive acronym meaning "GNU's not Unix!"), basing its design on that of
+            Unix, a proprietary operating system. Development was initiated in January 1984. In 1991, the Linux kernel
+            appeared, developed outside the GNU project by Linus Torvalds, and in December 1992 it was made available
+            under version 2 of the GNU General Public License. Combined with the operating system utilities already
+            developed by the GNU project, it allowed for the first operating system that was free software, commonly
+            known as Linux.
+            The project's current work includes software development, awareness building, political campaigning and
+            sharing of the new material.
+          </p>
+          <ul>
+            <li>
+              Origins
+              When the GNU project first started they had an Emacs text editor with Lisp for writing editor commands, a
+              source level debugger, a yacc-compatible parser generator, and a linker". The GNU system required its own
+              C compiler and tools to be free software, so these also had to be developed. By June 1987, the project had
+              accumulated and developed free software for an assembler, an almost finished portable optimizing C
+              compiler (GCC), an editor (GNU Emacs), and various Unix utilities . They had an initial kernel that needed
+              more updates.
+              Once the kernel and the compiler were finished, GNU was able to be used for program development. The main
+              goal was to create many other applications to be like the Unix system. GNU was able to run Unix programs
+              but was not identical to it. GNU incorporated longer file names, file version numbers, and a crashproof
+              file system. The GNU Manifesto was written to gain support and participation from others for the project.
+              Programmers were encouraged to take part in any aspect of the project that interested them. People could
+              donate funds, computer parts, or even their own time to write code and programs for the project.
+              The origins and development of most aspects of the GNU Project (and free software in general) are shared
+              in a detailed narrative in the Emacs help system. (C-h g runs the Emacs editor command
+              describe-gnu-project.) It is the same detailed history as at their web site.
+            </li>
+
+            <li>
+              GNU Manifesto
+              The GNU Manifesto was written by Richard Stallman to gain support and participation in the GNU Project. In
+              the GNU Manifesto, Stallman listed four freedoms essential to software users: freedom to run a program for
+              any purpose, freedom to study the mechanics of the program and modify it, freedom to redistribute copies,
+              and freedom to improve and change modified versions for public use.[12][13] To implement these freedoms,
+              users needed full access to code. To ensure code remained free and provide it to the public, Stallman
+              created the GNU General Public License (GPL), which allowed software and the future generations of code
+              derived from it to remain free for public use.
+            </li>
+
+            <li>
+              Philosophy and activism
+              Although most of the GNU Project's output is technical in nature, it was launched as a social, ethical,
+              and political initiative. As well as producing software and licenses, the GNU Project has published a
+              number of writings, the majority of which were authored by Richard Stallman.
+            </li>
+
+            <li>
+              Free software
+              The GNU project uses software that is free for users to copy, edit, and distribute. It is free in the
+              sense that users can change the software to fit individual needs. The way programmers obtain the free
+              software depends on where they get it. The software could be provided to the programmer from friends or
+              over the Internet, or the company a programmer works for may purchase the software. ncurses is a library
+              of the GNU Project
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="main-section" id="Dragora">
+        <header>Dragora</header>
+        <article>
+          <p>
+            <strong>Dragora GNU/Linux-Libre</strong> is an Argentine Linux distribution written from scratch sharing
+            some similarities with Slackware. It has a simple packaging system that allows installing, removing,
+            upgrading and creating packages, although the system may be challenging to new users. As it only packages
+            free software and uses the Linux-libre kernel, the Free Software Foundation endorses Dragora. Dragora is
+            considered to be based on the "Keep it simple, stupid" (KISS) principle, believed by the authors to be a
+            strength. Dragora can be downloaded from the web site or bought on CD.
+            Since Dragora 2 the init system Runit is used.
+          </p>
+          <h3>Release dates</h3>
+          <p>
+            The following list of releases includes the release date and the code name used by the project.
+          </p>
+          <ul>
+            <li>Dragora 1.0 Beta 1: June 13th, 2008 - "hell".</li>
+            <li>Dragora 1.0 Beta 2: September 18th, 2008.</li>
+            <li>Dragora 1.0 Release Candidate 1: February 12th, 2009.</li>
+            <li>Dragora 1.0 Stable: March 13th, 2009 - "starlight".</li>
+            <li>Dragora 1.1 Release Candidate 1: August 25th, 2009.</li>
+            <li>Dragora 1.1 Stable: October 8th, 2009 - "stargazer".</li>
+            <li>Dragora 2.0 Release Candidate 1: January 24th, 2010.</li>
+            <li>Dragora 2.0 Release Candidate 2: March 28th, 2010.</li>
+            <li>Dragora 2.0 Stable: April 13th, 2010 - "ardi".</li>
+            <li>Dragora 2.1 Release Candidate 1: December 4th, 2010.</li>
+            <li>Dragora 2.1 Stable: December 31st, 2010 - "dio".</li>
+            <li>Dragora 2.2 Release Candidate 1: March 2nd, 2012.</li>
+            <li>Dragora 2.2 Stable: April 21st, 2012 - "rafaela".</li>
+            <li>Dragora 3.0 Alpha 1: December 31st, 2017.</li>
+            <li>Dragora 3.0 Alpha 2: September 28th, 2018.</li>
+            <li>Dragora 3.0 Beta 1: October 16th, 2019.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="main-section" id="Debian">
+        <header>Debian</header>
+        <article>
+          <p>
+            <strong>Debian</strong> also known as Debian GNU/Linux, is a Linux distribution composed of free and
+            open-source software, developed by the community-supported Debian Project, which was established by Ian
+            Murdock on August 16, 1993. The first version, Debian 0.01, was released on September 15, 1993, and the
+            first stable version, 1.1, was released on June 17, 1996. The Debian Stable branch is the most popular
+            edition for personal computers and servers, and is the basis for many other distributions.
+
+            Debian is one of the oldest operating systems based on the Linux kernel. The project is coordinated over the
+            Internet by a team of volunteers guided by the Debian Project Leader and three foundational documents: the
+            Debian Social Contract, the Debian Constitution, and the Debian Free Software Guidelines. New distributions
+            are updated continually, and the next candidate is released after a time-based freeze.
+
+            Since its founding, Debian has been developed openly and distributed freely according to the principles of
+            the GNU Project. Because of this, the Free Software Foundation sponsored the project from November 1994 to
+            November 1995. When the sponsorship ended, the Debian Project formed the nonprofit organization Software in
+            the Public Interest to continue financially supporting development.
+          </p>
+          <h3>Installation</h3>
+          <p>
+            Debian offers DVD and CD images for installation that can be downloaded using BitTorrent or jigdo. Physical
+            discs can also be bought from retailers. The full sets are made up of several discs (the amd64 port consists
+            of 13 DVDs or 84 CDs), but only the first disc is required for installation, as the installer can retrieve
+            software not contained in the first disc image from online repositories.
+            Debian offers different network installation methods. A minimal install of Debian is available via the
+            netinst CD, whereby Debian is installed with just a base and later added software can be downloaded from the
+            Internet. Another option is to boot the installer from the network.
+            Installation images are hybrid on some architectures and can be used to create a bootable USB drive (Live
+            USB).[30]
+            The default bootstrap loader is GNU GRUB version 2, though the package name is simply grub, while version 1
+            was renamed to grub-legacy. This conflicts with e.g. Fedora, where grub version 2 is named grub2.
+            The default desktop may be chosen from the DVD boot menu among GNOME, KDE Plasma, Xfce and LXDE, and from
+            special disc 1 CDs.
+          </p>
+
+          <h3>Live images</h3>
+          <p>
+            Debian releases live install images for CDs, DVDs and USB thumb drives, for IA-32 and x86-64 architectures,
+            and with a choice of desktop environments. These Debian Live images allow users to boot from removable media
+            and run Debian without affecting the contents of their computer.
+            A full install of Debian to the computer's hard drive can be initiated from the live image environment.
+            Personalized images can be built with the live-build tool for discs, USB drives and for network booting
+            purposes.
+          </p>
+
+          <h3>Developers</h3>
+          <p>
+            The Debian Project has an influx of applicants wishing to become developers. These applicants must undergo a
+            vetting process which establishes their identity, motivation, understanding of the project's principles, and
+            technical competence. This process has become much harder throughout the years.
+            Debian developers join the project for many reasons. Some that have been cited include:
+            Debian is their main operating system and they want to promote Debian.
+            To improve the support for their favorite technology
+            They are involved with a Debian derivative
+            A desire to contribute back to the free-software community
+            To make their Debian maintenance work easier
+            Debian developers may resign their positions at any time or, when deemed necessary, they can be expelled.
+            Those who follow the retiring protocol are granted the "emeritus" status and they may regain their
+            membership through a shortened new member process.
+            Each software package has a maintainer that may be either one person or a team of Debian developers and
+            non-developer maintainers. The maintainer keeps track of upstream releases, and ensures that the package
+            coheres with the rest of the distribution and meets the standards of quality of Debian. Packages may include
+            modifications introduced by Debian to achieve compliance with Debian Policy, even to fix non-Debian specific
+            bugs, although coordination with upstream developers is advised.
+            The maintainer releases a new version by uploading the package to the "incoming" system, which verifies the
+            integrity of the packages and their digital signatures. If the package is found to be valid, it is installed
+            in the package archive into an area called the "pool" and distributed every day to hundreds of mirrors
+            worldwide. The upload must be signed using OpenPGP-compatible software. All Debian developers have
+            individual cryptographic key pairs. Developers are responsible for any package they upload even if the
+            packaging was prepared by another contributor.
+          </p>
+        </article>
+      </section>
+
+      <section class="main-section" id="Fedora">
+        <header>Fedora</header>
+        <article>
+          <p>
+            <strong>Fedora or Fedora Linux</strong> is a Linux distribution developed by the community-supported Fedora
+            Project which is sponsored primarily by Red Hat Inc. with minor support by other companies. Fedora contains
+            software distributed under various free and open-source licenses and aims to be on the leading edge of free
+            technologies.Fedora is the upstream source of the commercial Red Hat Enterprise Linux distribution.
+            Since the release of Fedora 30, five different editions are currently available: Workstation, focused on the
+            personal computer, Server for servers, CoreOS, focused on cloud computing, Silverblue, focused on an
+            immutable desktop specialized to container-based workflows and IoT, focused on IoT devices.
+            As of February 2016, Fedora has an estimated 1.2 million users, including Linus Torvalds (as of 2015),
+            creator of the Linux kernel.
+            Fedora is a trademark of Red Hat, Inc. Red Hat's application for trademark status for the name "Fedora" was
+            disputed by Cornell University and the University of Virginia Library, creators of the unrelated Fedora
+            Commons digital repository management software. The issue was resolved and the parties settled on a
+            co-existence agreement that stated that the Cornell-UVA project could use the name when clearly associated
+            with open source software for digital object repository systems and that Red Hat could use the name when it
+            was clearly associated with open source computer operating systems.
+          </p>
+
+          <h3>Features</h3>
+          <p>
+            Fedora has a reputation for focusing on innovation, integrating new technologies early on and working
+            closely with upstream Linux communities. Making changes upstream instead of specifically for Fedora ensures
+            that the changes are available to all Linux distributions.
+            Fedora has a relatively short life cycle: each version is usually supported for at least 13 months, where
+            version X is supported only until 1 month after version X+2 is released and with approximately 6 months
+            between most versions. Fedora users can upgrade from version to version without reinstalling.
+            The default desktop environment in Fedora is GNOME and the default user interface is the GNOME Shell. Other
+            desktop environments, including KDE Plasma, Xfce, LXDE, MATE, Deepin and Cinnamon, are available and can be
+            installed.
+          </p>
+
+          <h3>Package management</h3>
+          <p>
+            Most Fedora editions use the RPM package management system, using DNF as a tool to manage the RPM packages.
+            DNF uses libsolv, an external dependency resolver. Flatpak is also included by default, and support for
+            Ubuntu's snaps can be added. Fedora uses Delta RPM when updating installed packages to provide delta
+            updates. A Delta RPM contains the difference between an old and new version of a package. This means that
+            only the changes between the installed package and the new one are downloaded, reducing network traffic and
+            bandwidth consumption.
+            The Fedora CoreOS and Silverblue editions use rpm-ostree, a hybrid transactional image/package system to
+            manage the host. Traditional DNF (or other systems) should be used in containers.
+          </p>
+
+          <h3>Security</h3>
+          <p>
+            Fedora uses Security-Enhanced Linux by default, which implements a variety of security policies, including
+            mandatory access controls, which Fedora adopted early on.Fedora provides a hardening wrapper, and does
+            hardening for all of its packages by using compiler features such as position-independent executable (PIE).
+          </p>
+
+          <h3>Software</h3>
+          <p>
+            Fedora comes preinstalled with a wide range of software such as LibreOffice and Firefox. Additional software
+            is available from the software repositories and can be installed using the DNF package manager or GNOME
+            Software.
+            Additionally, extra repositories can be added to the system, so that software not available in Fedora can be
+            installed easily. Software that is not available via official Fedora repositories, either because it doesn't
+            meet Fedora's definition of free software or because its distribution may violate US law, can be installed
+            using third-party repositories. Popular third-party repositories include RPM Fusion free and non-free
+            repositories. Fedora also provides users with an easy-to-use build system for creating their own
+            repositories called Copr.
+            Since the release of Fedora 25, the operating system defaults to the Wayland display server protocol, which
+            replaced the X Window System.
+          </p>
+        </article>
+      </section>
+
+      <section class="main-section" id="Arch_Linux">
+        <header>Arch Linux</header>
+        <article>
+          <p>
+            <strong>Arch Linux</strong> is a Linux distribution for computers based on x86-64 architectures. The Arch
+            Linux repositories contain both libre, and nonfree software, and the default Arch Linux kernel contains
+            nonfree proprietary blobs, hence the distribution is not endorsed by the GNU project.
+            Arch Linux adheres to five principles: simplicity, modernity, pragmatism, user centrality and versatility.
+            In general, the principles maintain minimal distribution-specific changes, minimal breakage with updates,
+            pragmatic over ideological design choices, user-friendliness, and minimal bloat.
+            A package manager written specifically for Arch Linux, Pacman, is used to install, remove and update
+            software packages. Arch Linux uses a rolling release model, meaning there are no "major releases" of
+            completely new versions of the system; a regular system update is all that is needed to obtain the latest
+            Arch software; the installation images released by the Arch team are simply up-to-date snapshots of the main
+            system components.
+            Arch Linux has comprehensive documentation, which consists of a community wiki known as the ArchWiki.
+            Inspired by CRUX, another minimalist distribution, Judd Vinet started the Arch Linux project in March 2002.
+            The name was chosen because Vinet liked the word's meaning of "the principal," as in "arch-enemy".
+            Originally only for 32-bit x86 CPUs, the first x86_64 installation ISO was released in April 2006.
+            Vinet led Arch Linux until 1 October 2007, when he stepped down due to lack of time, transferring control of
+            the project to Aaron Griffin.
+            On 24 February 2020 Aaron Griffin transferred the control of the project to Levente Polyak.
+            The end of i686 support was announced in January 2017, with the February 2017 ISO being the last one
+            including i686 and making the architecture unsupported in November 2017. Since then, the community
+            derivative Arch Linux 32 can be used for i686 hardware.
+          </p>
+          <h3>Design and principles</h3>
+          <p>
+            Arch is largely based on binary packages. Packages target x86-64 microprocessors to assist performance on
+            modern hardware. A ports/ebuild-like system is also provided for automated source compilation, known as the
+            Arch Build System.
+            Arch Linux focuses on simplicity of design, meaning that the main focus involves creating an environment
+            that is straightforward and relatively easy for the user to understand directly, rather than providing
+            polished point-and-click style management tools — the package manager, for example, does not have an
+            official graphical front-end. This is largely achieved by encouraging the use of succinctly commented, clean
+            configuration files that are arranged for quick access and editing. This has earned it a reputation as a
+            distribution for "intermediate and advanced Linux users who aren't afraid of the command line".
+          </p>
+          <blockquote>
+            <p>
+              Relying on complex tools to manage and build your system is going to hurt the end users. [...] "If you try
+              to hide the complexity of the system, you'll end up with a more complex system". Layers of abstraction
+              that serve to hide internals are never a good thing. Instead, the internals should be designed in a way
+              such that they NEED no hiding.
+            </p>
+            <cite>— Aaron Griffin</cite>
+          </blockquote>
+
+          <h3>Installation</h3>
+          <p>
+            The Arch Linux website supplies ISO images that can be run from CD or USB. After a user partitions and
+            formats their drive, a simple command line script (pacstrap) is used to install the base system. The
+            installation of additional packages which are not part of the base system (for example, desktop
+            environments), can be done with either pacstrap, or Pacman after booting (or chrooting) into the new
+            installation.
+            An alternative to using CD or USB images for installation is to use the static version of the package
+            manager Pacman, from within another Linux-based operating system. The user can mount their newly formatted
+            drive partition, and use pacstrap (or Pacman with the appropriate command-line switch) to install base and
+            additional packages with the mountpoint of the destination device as the root for its operations. This
+            method is useful when installing Arch Linux onto USB flash drives, or onto a temporarily mounted device
+            which belongs to another system.
+            Regardless of the selected installation type, further actions need to be taken before the new system is
+            ready for use, most notably by installing a bootloader, creating an initramfs, and configuring the new
+            system.
+            Arch Linux does not schedule releases for specific dates but uses a "rolling release" system where new
+            packages are provided throughout the day. Its package management allows users to easily keep systems
+            updated.
+            Occasionally, manual interventions are required for certain updates, with instructions posted on the news
+            section of the Arch Linux website.
+          </p>
+        </article>
+      </section>
+
+      <section class="main-section" id="Ubuntu">
+        <header>Ubuntu</header>
+        <article>
+          <p>
+            <strong>Ubuntu</strong> is a free and open-source Linux distribution based on Debian. Ubuntu is officially
+            released in three editions: Desktop, Server, and Core for the internet of things devices and robots. All the
+            editions can run on the computer alone, or in a virtual machine.[16] Ubuntu is a popular operating system
+            for cloud computing, with support for OpenStack.
+            Ubuntu is released every six months, with long-term support (LTS) releases every two years. The latest
+            release is 19.10 ("Eoan Ermine"), and the most recent long-term support release is 18.04 LTS ("Bionic
+            Beaver"), which is supported until 2023 under public support and until 2028 as a paid option.
+            Ubuntu is developed by Canonical, and a community of other developers, under a meritocratic governance
+            model.Canonical provides security updates and support for each Ubuntu release, starting from the release
+            date and until the release reaches its designated end-of-life (EOL) date. Canonical generates revenue
+            through the sale of premium services related to Ubuntu.
+            Ubuntu is named after the African Nguni philosophy of ubuntu, which Canonical translates as "humanity to
+            others" or "I am what I am because of who we all are".
+          </p>
+          <h3>Features</h3>
+          <p>
+            A default installation of Ubuntu contains a wide range of software that includes LibreOffice, Firefox,
+            Thunderbird, Transmission, and several lightweight games such as Sudoku and chess. Many additional software
+            packages are accessible from the built in Ubuntu Software (previously Ubuntu Software Center) as well as any
+            other APT-based package management tools. Many additional software packages that are no longer installed by
+            default, such as Evolution, GIMP, Pidgin, and Synaptic, are still accessible in the repositories still
+            installable by the main tool or by any other APT-based package management tool. Cross-distribution snap
+            packages and flatpaks are also available, that both allow installing software, such as some of Microsoft's
+            software, in most of the major Linux operating systems (such as any currently supported Ubuntu version and
+            in Fedora). The default file manager is GNOME Files, formerly called Nautilus.
+            All of the application software installed by default is free software. In addition, Ubuntu redistributes
+            some hardware drivers that are available only in binary format, but such packages are clearly marked in the
+            restricted component.
+          </p>
+          <h3>Security</h3>
+          <p>
+            Ubuntu aims to be secure by default.[56][57] User programs run with low privileges and cannot corrupt the
+            operating system or other users' files. For increased security, the sudo tool is used to assign temporary
+            privileges for performing administrative tasks, which allows the root account to remain locked and helps
+            prevent inexperienced users from inadvertently making catastrophic system changes or opening security
+            holes.[58] Polkit is also being widely implemented into the desktop.
+            Most network ports are closed by default to prevent hacking. A built-in firewall allows end-users who
+            install network servers to control access. A GUI (GUI for Uncomplicated Firewall) is available to configure
+            it. Ubuntu compiles its packages using GCC features such as PIE and buffer overflow protection to harden its
+            software.These extra features greatly increase security at the performance expense of 1% in 32-bit and 0.01%
+            in 64-bit.
+            Ubuntu also supports full disk encryption as well as encryption of the home and Private directories.
+          </p>
+          <h3>Installation</h3>
+          <p>
+            The system requirements vary among Ubuntu products. For the Ubuntu desktop release 16.04 LTS, a PC with at
+            least 2 GHz dual-core processor, 2 GB of RAM and 25 GB of free disk space is recommended. For less powerful
+            computers, there are other Ubuntu distributions such as Lubuntu and Xubuntu. Ubuntu supports the ARM
+            architecture. It is also available on Power ISA,while older PowerPC architecture was at one point
+            unofficially supported, and now newer Power ISA CPUs (POWER8) are supported.
+            Live images are the typical way for users to assess and subsequently install Ubuntu. These can be downloaded
+            as a disk image (.iso) and subsequently burnt to a DVD and booted, or run via UNetbootin directly from a USB
+            drive (making, respectively, a live DVD or live USB medium). Running Ubuntu in this way is slower than
+            running it from a hard drive, but does not alter the computer unless specifically instructed by the user. If
+            the user chooses to boot the live image rather than execute an installer at boot time, there is still the
+            option to then use an installer called Ubiquity to install Ubuntu once booted into the live environment.
+            Disk images of all current and past versions are available for download at the Ubuntu web site. Various
+            third-party programs such as remastersys and Reconstructor are available to create customized copies of the
+            Ubuntu Live DVDs (or CDs). "Minimal CDs" are available (for server use) that fit on a CD.
+
+          </p>
+        </article>
+      </section>
+
+      <section class="main-section" id="Kali_Linux">
+        <header>Kali Linux</header>
+        <article>
+          <p>
+            <strong>Kali Linux</strong> is a Debian-derived Linux distribution designed for digital forensics and
+            penetration testing. It is maintained and funded by Offensive Security Ltd.
+            Kali Linux has over 600 preinstalled penetration-testing programs, including Armitage (a graphical cyber
+            attack management tool), Nmap (a port scanner), Wireshark (a packet analyzer), John the Ripper password
+            cracker, Aircrack-ng (a software suite for penetration-testing wireless LANs), Burp suite and OWASP ZAP web
+            application security scanners.
+            It was developed by Mati Aharoni and Devon Kearns of Offensive Security through the rewrite of BackTrack,
+            their previous information security testing Linux distribution based on Knoppix. The third core developer,
+            Raphaël Hertzog, joined them as a Debian expert.
+            Kali Linux is based on the Debian Testing branch. Most packages Kali uses are imported from the Debian
+            repositories.
+            The Kali Linux project began quietly in 2012, when Offensive Security decided that they wanted to replace
+            their venerable BackTrack Linux project, which was manually maintained, with something that could become a
+            genuine Debian derivative, complete with all of the required infrastructure and improved packaging
+            techniques. The decision was made to build Kali on top of the Debian distribution because it is well known
+            for its quality, stability, and wide selection of available software.
+            The first version (1.0) was released one year later, in March 2013, and was based on Debian 7 “Wheezy”,
+            Debian’s stable distribution at the time. In that first year of development, they packaged hundreds of
+            pen-testing-related applications and built the infrastructure. Even though the number of applications is
+            significant, the application list has been meticulously curated, dropping applications that no longer worked
+            or that duplicated features already available in better programs.
+            During the two years following version 1.0, Kali released many incremental updates, expanding the range of
+            available applications and improving hardware support, thanks to newer kernel releases. With some investment
+            in continuous integration, they ensured that all important packages were kept in an installable state and
+            that customized live images (a hallmark of the distribution) could always be created.
+            With version 2019.4 in November 2019, the default user interface was switched from GNOME to Xfce, with a
+            GNOME version still available.
+          </p>
+          <h3>Supported platforms</h3>
+          <p>
+            Kali Linux is distributed in 32-bit and 64-bit images for use on hosts based on the x86 instruction set and
+            as an image for the ARM architecture for use on the Beagle Board computer and on Samsung's ARM Chromebook.
+            The developers of Kali Linux aim to make Kali Linux available for even more ARM devices.
+            Kali Linux is already available for Asus Chromebook Flip C100P, BeagleBone Black, HP Chromebook, CubieBoard
+            2, CuBox, CuBox-i, Raspberry Pi, EfikaMX, Odroid U2, Odroid XU, Odroid XU3, Samsung Chromebook, Utilite Pro,
+            Galaxy Note 10.1, and SS808.
+            With the arrival of Kali NetHunter, Kali Linux is also officially available on Android devices such as the
+            Nexus 5, Nexus 6, Nexus 7, Nexus 9, Nexus 10, OnePlus One, and some Samsung Galaxy models.
+            Kali Linux is available on Windows 10, on top of Windows Subsystem for Linux (WSL). The official Kali
+            distribution for Windows can be downloaded from the Microsoft Store.
+          </p>
+          <h3>Features</h3>
+          <p>
+            Kali Linux has a dedicated project set aside for compatibility and porting to specific Android devices,
+            called Kali Linux NetHunter.
+            It is the first Open Source Android penetration testing platform for Nexus devices, created as a joint
+            effort between the Kali community member "BinkyBear" and Offensive Security. It supports Wireless 802.11
+            frame injection, one-click MANA Evil Access Point setups, HID keyboard (Teensy like attacks), as well as Bad
+            USB MITM attacks.
+            BackTrack (Kali's predecessor) contained a mode known as forensic mode, which was carried over to Kali via
+            live boot. This mode is very popular for many reasons, partly because many Kali users already have a
+            bootable Kali USB drive or CD, and this option makes it easy to apply Kali to a forensic job. When booted in
+            forensic mode, the system doesn't touch the internal hard drive or swap space and auto mounting is disabled.
+            However, the developers recommend that users test these features extensively before using Kali for real
+            world forensics.
+          </p>
+          <h3>Requirements</h3>
+          <ul>
+            <li>Kali Linux requires a minimum of 3GB hard disk space for installation.</li>
+            <li>A minimum of 512MB RAM for i386 and AMD64 architectures.</li>
+            <li>A bootable CD-DVD drive or a USB stick.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="main-section" id="Terminal">
+        <header>Terminal</header>
+        <article>
+          <p>
+            The Linux command line is a text interface to your computer. Often referred to as the shell, terminal,
+            console, prompt or various other names, it can give the appearance of being complex and confusing to use.
+            Yet the ability to copy and paste commands from a website, combined with the power and flexibility the
+            command line offers, means that using it may be essential when trying to follow instructions online
+            Linux includes a large number of commands, but we’ve chosen 5 of the most important ones to present here.
+            Learn these commands, and you’ll be much more at home at the Linux command prompt.
+          </p>
+          <h3>1. alias</h3>
+          <p>
+            The alias command lets you give your own name to a command or sequence of commands. You can then type your
+            short name, and the shell will execute the command or sequence of commands for you.
+          </p>
+          <code>alias cls=clear</code>
+          <p>
+            This sets up an alias called cls . It will be another name for clear . When you type cls, it will clear the
+            screen just as though you had typed clear . Your alias saves a few keystrokes, sure. But, if you frequently
+            move between Windows and Linux command line, you can find yourself typing the Windows cls command on a Linux
+            machine that doesn’t know what you mean. Now it will know.
+
+            Aliases can be much more intricate than that simple example. Here’s an alias called pf (for process find)
+            that is just a little more complex. Note the use of quotation marks around the command sequence. This is
+            required if the command sequence has spaces in it. This alias uses the ps command to list the running
+            processes and then pipes them through the grep command. The grep command looks for entries in the output
+            from ps that match the command line parameter $1 .
+          </p>
+          <code>alias pf="ps -e | grep $1"</code>
+          <p>
+            If you wanted to discover the process ID (PID) of the shutter process—or to find out if shutter was even
+            running—you could use the alias like this. Type pf, a space, and the name of the process you are interested
+            in:
+          </p>
+          <code>pf shutter</code>
+          <p>
+            Aliases defined on the command line will die with the terminal window. When you close it, they are gone. To
+            make your aliases always be available to you, add them to the.bash_aliases file in your home directory.
+          </p>
+
+          <h3>2. cat</h3>
+          <p>
+            The cat command (short for “concatenate”) lists the contents of files to the terminal window. This is faster
+            than opening the file in an editor, and there’s no chance you can accidentally alter the file. To read the
+            contents of your .bash_log_out file, type the following command while the home directory is your current
+            working directory, as it is by default:
+          </p>
+          <code>cat .bash_logout</code>
+          <p>
+            With files longer than the number of lines in your terminal window, the text will whip past too fast for you
+            to read. You can pipe the output from cat through less to make the process more manageable. With less you
+            can scroll forward and backward through the file using the Up and Down Arrow keys, the PgUp and PgDn keys,
+            and the Home and End keys. Type q to quit from less.
+          </p>
+          <code>cat .bashrc | less</code>
+
+          <h3>3. cd</h3>
+          <p>
+            The cd command changes your current directory. In other words, it moves you to a new place in the
+            filesystem.
+            If you are changing to a directory that is within your current directory, you can simply type cd and the
+            name of the other directory.
+          </p>
+          <code>cd work</code>
+          <p>
+            If you are changing to a directory elsewhere within the filesystem directory tree, provide the path to the
+            directory with a leading /.
+          </p>
+          <code>cd /usr/local/bin</code>
+          <p>
+            To quickly return to your home directory, use the ~ (tilde) character as the directory name.
+          </p>
+          <code>cd ~</code>
+          <p>
+            Here’s another trick: You can use the double dot symbol .. to represent the parent of the current directory.
+            You can type the following command to go up a directory:
+          </p>
+          <code>cd ..</code>
+          <p>
+            Imagine you are in a directory. The parent directory has other directories in it, as well as the directory
+            you’re currently in. To change into one of those other directories, you can use the .. symbol to shorten
+            what you have to type.
+          </p>
+          <code>cd ../games</code>
+
+          <h3>4. chmod</h3>
+          <p>
+            The chmod command sets the file permissions flags on a file or folder. The flags define who can read, write
+            to or execute the file. When you list files with the -l (long format) option you’ll see a string of
+            characters that look like
+          </p>
+          <code>-rwxrwxrwx</code>
+          <p>
+            If the first character is a - the item is a file, if it is a d the item is a directory. The rest of the
+            string is three sets of three characters. From the left, the first three represent the file permissions of
+            the owner, the middle three represent the file permissions of the group and the rightmost three characters
+            represent the permissions for others. In each set, an r stands for read, a w stands for write, and an x
+            stands for execute.
+          </p>
+          <p>
+            If the <small>r, w, </small>or <small>x</small> character is present that file permission is granted. If the
+            letter is not present and a - appears instead, that file permission is not granted.
+          </p>
+          <p>
+            One way to use chmod is to provide the permissions you wish to give to the owner, group, and others as a 3
+            digit number. The leftmost digit represents the owner. The middle digit represents the group. The rightmost
+            digit represents the others. The digits you can use and what they represent are listed here:
+          </p>
+          <ul>
+            <li>0: No permission</li>
+            <li>1: Execute permission</li>
+            <li>2: Write permission</li>
+            <li>3: Write and execute permissions</li>
+            <li>4: Read permission</li>
+            <li>5: Read and execute permissions</li>
+            <li>6: Read and write permissions</li>
+            <li>7: Read, write and execute permissions</li>
+          </ul>
+
+          <p>
+            Looking at our example.txt file, we can see that all three sets of characters are rwx. That means everyone
+            has read, write and execute rights with the file.To set the permission to be read, write, and execute (7
+            from our list) for the owner; read and write (6 from our list) for the group; and read and execute (5 from
+            our list) for the others we’d need to use the digits 765 with the chmod command:
+          </p>
+          <code>chmod -R 765 example.txt</code>
+          <p>
+            To set the permission to be read, write and execute (7 from our list) for the owner, and read and write (6
+            from our list) for the group and for the others we’d need to use the digits 766 with the chmod command:
+          </p>
+          <code>chmod 766 example.txt</code>
+
+          <h3>5. chown</h3>
+          <p>
+            The chown command allows you to change the owner and group owner of a file. Listing our example.txt file
+            with ls -l we can see dave dave in the file description. The first of these indicates the name of the file
+            owner, which in this case is the user dave. The second entry shows that the name of the group owner is also
+            dave. Each user has a default group created when the user is created. That user is the only member of that
+            group. This shows that the file is not shared with any other groups of users.
+          </p>
+          <p>
+            You can use chown to change the owner or group, or both of a file. You must provide the name of the owner
+            and the group, separated by a : character. You will need to use sudo. To retain dave as the owner of the
+            file but to set mary as the group owner, use this command:
+          </p>
+          <code>sudo chown dave:mary example.txt</code>
+          <p>
+            To change both the owner and the group owner to mary, you would use the following command;
+          </p>
+          <code>sudo chown mary:mary example.txt</code>
+          <p>
+            To change the file so that dave is once more the file owner and the group owner, use this command:
+          </p>
+          <code>sudo chown dave:dave example.txt</code>
+        </article>
+      </section>
+
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+          <img src="https://e-tinet.com/wp-content/uploads/2017/02/MELHORES-DISTRIBUICOES-LINUX-RODAR-SERVIDORES-2.png"
+            alt="">
+          <p>
+            Learning Linux is like learning anything else. You’re going to need some practice before become familiar
+            with these commands. Once you have these commands at your fingertips, you’ll be well along the path to
+            proficiency.
+
+            There’s an old joke—probably as old as Unix itself—that says the only command you need to know is the man
+            command. There’s a glimmer of truth in that, but some of the man pages are impenetrable without an
+            introduction. This tutorial should give you the introduction you need.
+          </p>
+          <p>
+            All the documentation in this page is taken from <a href="https://www.wikipedia.org/"
+              target="_blank">Wikipedia</a> and
+            <a href="https://www.howtogeek.com/412055/37-important-linux-commands-you-should-know/"
+              target="_blank">How-To Geek</a>
+          </p>
+
+        </article>
+      </section>
+      <footer>
+        <div id="contacts">
+          <p class="footer">
+            <a href="https://github.com/justalbertcode" target="_blank">
+              Made by Just Albert Code &copy;2020
+            </a>
+          </p>
+        </div>
+      </footer>
+    </main>
+
+  </div>
+
+</body>
+
+</html>

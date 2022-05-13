@@ -1,0 +1,249 @@
+html,
+body {
+  color: black;
+  background-color: #eee;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+ 
+}
+
+img{
+ width: 25%;
+ box-sizing: border-box;
+}
+#navbar header, span{
+  font-size: 1.3rem;
+  line-height: 1;
+  color: blue;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  color: red;
+  margin: 10px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.9);
+}
+
+#main-doc header {
+  text-align: left;
+  margin: 5px;
+}
+#navbar {
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  top: 0px;
+  left: 0px;
+  bottom: 0;
+  right: 0;
+   width: 170px;
+  height: 100vh;
+  border-right: solid;
+  border-color: #797776;
+  background: #eee;
+}
+
+#navbar ul {
+  padding: 0;
+  margin: 0;
+}
+
+#navbar li {
+  height: 40px;
+  width: 170px;
+  overflow: hidden;
+}
+
+#navbar li a{
+  display: block;
+  width: 170px;
+  background: #bbb;
+  margin: 1px;
+  color: #000;
+  padding-left: 15px;
+  cursor: pointer;
+   -moz-transition: background .2s ease-in-out;
+   -webkit-transition: background .2s ease-in-out;
+   -o-transition: background .2s ease-in-out;
+   transition: background .2s ease-in-out;
+}
+
+#navbar li a:hover{
+  background: #1fc4ff;
+}
+
+#navbar li a:first-child{
+  font-size:  1em;
+  font-weight: bold;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  text-indent: 30px;
+}
+
+#navbar li a:first-child::before {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 30px;
+  width: 30px;
+  top: 6px;
+  left: 7px;
+}
+
+.introduction a:first-child::before {
+  background: url(https://alt-tab.ru/upload/medialibrary/449/449544c524be74de9626c0ad6d702f0c.png) no-repeat center center /  cover;
+}
+.history a:first-child::before {
+  background: url(http://1c789.ru/images/Dmirtiy.png) no-repeat center center /  cover;
+}
+.gnu a:first-child::before {
+  background: url(https://lh3.googleusercontent.com/Tz40a1qakNnW-a-qir24XwZn9MVeK-WjhU3P2f0C8ulZqpikcbNHScMqlTQGsgK03CW-=w750-h750) no-repeat center center /  cover;
+}
+.dragora a:first-child::before {
+  background: url(https://www.dragora.org/img/dragora.png) no-repeat center center /  cover;
+}
+.debian a:first-child::before {
+  background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Antu_distributor-logo-debian.svg/1024px-Antu_distributor-logo-debian.svg.png) no-repeat center center /  cover;
+}
+.fedora a:first-child::before {
+  background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Fedora-logo.svg/1200px-Fedora-logo.svg.png) no-repeat center center /  cover;
+}
+.arch a:first-child::before {
+  background: url(http://lh6.ggpht.com/_5N23CRHakjY/TEiPHPcBYqI/AAAAAAAABPA/qf0akHxAoKM/arch%20menu1.png) no-repeat center center /  cover;
+}
+.ubuntu a:first-child::before {
+  background: url(https://avatars.mds.yandex.net/get-zen_doc/229502/pub_5b7a672ec8693100a9cdea79_5b7a675b51ae3000a974c8ba/scale_1200) no-repeat center center /  cover;
+}
+.kali a:first-child::before {
+  background: url(https://i.stack.imgur.com/8pk78.png?s=328&g=1) no-repeat center center /  cover;
+    border-radius: 50%;
+}
+.terminal a:first-child::before {
+  background: url(https://www.freepngimg.com/thumb/symbol/63241-console-command-line-icons-terminal-computer-linux-interface.png) no-repeat center center /  cover;
+}
+.reference a:first-child::before {
+  background: url(https://i.pinimg.com/originals/38/fe/da/38feda6b22bec8221f2309e667d67f1c.png) no-repeat center center /  cover;
+}
+
+
+#main-doc {
+  
+  margin-left: 170px;
+  /*padding: 5px;*/
+ 
+}
+#Introduction{
+  background: url(https://i.pinimg.com/originals/d4/79/35/d479359444438e53a87e3fcd7a752b0e.png) no-repeat center center / cover, rgba(255,255,255,0.6);
+  background-blend-mode: color;
+}
+#History{
+  background: url(https://wallpapertag.com/wallpaper/full/f/6/8/961676-linuxmint-wallpaper-1920x1200-hd.jpg) no-repeat center center / cover, rgba(255,255,255,0.6);
+  background-blend-mode: color;
+}
+#GNU_Project{
+  background: url(https://www1-lw.xda-cdn.com/files/2017/05/gnugpl.png) no-repeat center center / cover, rgba(255,255,255,0.6);
+  background-blend-mode: color;
+}
+#Dragora_GNU{
+   background: url(https://we.riseup.net/assets/147433/green-dragon-6.png) no-repeat center center / cover, rgba(255,255,255,0.4);
+  background-blend-mode: color;
+}
+#Debian{
+   background: url(https://blog.desdelinux.net/wp-content/uploads/2018/11/Debian-9.6.jpg) no-repeat center center / cover, rgba(255,255,255,0.4);
+  background-blend-mode: color;
+}
+#Fedora{
+   background: url(https://img.wallpapersafari.com/desktop/1600/900/3/94/KfBONY.jpg) no-repeat center center / cover, rgba(255,255,255,0.4);
+  background-blend-mode: color;
+}
+#Arch_Linux{
+   background: url(https://wallpapercave.com/wp/wp2946662.png) no-repeat center center / cover, rgba(255,255,255,0.4);
+  background-blend-mode: color;
+}
+#Ubuntu{
+   background: url(https://news-cdn.softpedia.com/images/news2/ubuntu-20-10-groovy-gorilla-release-date-announced-529814-2.jpg) no-repeat center center / cover, rgba(255,255,255,0.4);
+  background-blend-mode: color;
+}
+#Kali_Linux{
+    background: url(https://avatars.mds.yandex.net/get-pdb/2080781/dd8513ec-6c85-4dc5-a26c-14d784b2c026/s1200) no-repeat center center / cover, rgba(255,255,255,0.4);
+  background-blend-mode: color;
+}
+
+#Terminal{
+  background: #ccc;
+  }
+
+#Reference{
+  background: url(https://i.pinimg.com/originals/aa/04/63/aa0463a71dbebaba9a4e6da7540072ab.jpg) no-repeat center center / cover, rgba(255,255,255,0.4);
+  background-blend-mode: color;
+}
+
+section{
+  margin-bottom: 10px;
+  padding: 15px;
+}
+
+section article {
+  color: black;
+  margin: 10px;
+  font-size: 1.1rem;
+  text-align: justify;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+section li {
+  margin: 15px 0px 0px 20px;
+}
+
+code {
+  display: block;
+  text-align: left;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #282923;
+  color: white;
+  padding: 10px 10px 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-shadow: none;
+}
+
+
+/*----------------Footer-----------------*/
+.footer {
+  text-align: center;
+  font-weight: bold;
+  margin: 0 auto;
+  background-color: #eee;
+  align-items: center;
+  padding-top: 20px;
+  }
+
+.footer:hover {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+a {
+  color: darkblue;
+  text-decoration: none;
+}
+
+/*----------------Media-----------------*/
+
+@media (max-width:870px){
+
+  img{
+    width: 100%;
+  }
+    
+}
